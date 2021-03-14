@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+#add-book{
+    width : 450px;
+    /*height: 90vh;*/
+    position: absolute;
+    left: -350px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 1s ease-out;
+    margin-right: 50px;
+    font-weight: 700;
+    color:indigo;
+}
+
+#book-info{
+    border-radius: 10px;
+    /*border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;*/
+    width: 80%;
+    padding: 10px;
+    background: rgba(255,255,255,0.4);
+}
+
+#add-section-button{
+    width: 20%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;*/
+    border-radius: 10px;
+    margin-left: 5px;
+    background: rgba(255,255,255,0.4);
+}
+
+#add-section-button > p {
+    text-align: center;
+    margin: auto;
+}
+
+#add-section-button:hover{
+    cursor: pointer;
+}
+
+#book-add-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#book-add-form >label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#book-add-form > p {
+    margin-top: 5px;
+}
+
+#book-add-form > input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    height:35px;
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    background-color: rgba(238,174,202,0.5);
+}
+
+#book-add-form > input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgba(148,187,233,0.5);
+}
+
+input[type ="radio"]{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+#library-display{
+    max-width: 800px;
+    margin: auto;
+    height: 80vh;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+    background: rgba(255,255,255,0.3);
+    font-weight: 600;
+    color:indigo;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#book-display-info{
+    width: 70%;
+}
+
+#book-read{
+    width: 15%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#book-read:hover{
+    cursor:pointer;
+}
+
+#book-remove{
+    width: 15%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#book-remove:hover{
+    cursor: pointer;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    color:dimgrey;
+}
